@@ -49,6 +49,10 @@ public class SpringBootRpcServerDemo {
         return motanAnnotationBean;
     }
 
+    /**
+     * 协议与连接（motan:protocol）
+     * @return
+     */
     @Bean(name = "demoMotan")
     public ProtocolConfigBean protocolConfig1() {
         ProtocolConfigBean config = new ProtocolConfigBean();
@@ -58,6 +62,10 @@ public class SpringBootRpcServerDemo {
         return config;
     }
 
+    /**
+     * 注册中心与服务发现（motan:registry）
+     * @return
+     */
     @Bean(name = "registryConfig1")
     public RegistryConfigBean registryConfig() {
         RegistryConfigBean config = new RegistryConfigBean();
@@ -65,6 +73,10 @@ public class SpringBootRpcServerDemo {
         return config;
     }
 
+    /**
+     * 服务提供方使用的基本配置（motan:basicService对象）
+     * @return
+     */
     @Bean
     public BasicServiceConfigBean baseServiceConfig() {
         BasicServiceConfigBean config = new BasicServiceConfigBean();

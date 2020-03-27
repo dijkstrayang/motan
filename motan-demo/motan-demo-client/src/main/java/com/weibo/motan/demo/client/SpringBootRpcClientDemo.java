@@ -62,6 +62,10 @@ public class SpringBootRpcClientDemo {
         return config;
     }
 
+    /**
+     * 服务调用者基本配置（motan:basicReferer）
+     * @return
+     */
     @Bean(name = "motantestClientBasicConfig")
     public BasicRefererConfigBean baseRefererConfig() {
         BasicRefererConfigBean config = new BasicRefererConfigBean();

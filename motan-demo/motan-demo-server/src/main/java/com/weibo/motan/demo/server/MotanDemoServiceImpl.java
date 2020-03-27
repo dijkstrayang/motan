@@ -22,6 +22,9 @@ import com.weibo.motan.demo.service.model.User;
 
 import java.util.Objects;
 
+/**
+ * 服务提供方(motan:service)
+ */
 @MotanService(export = "demoMotan:8002")
 public class MotanDemoServiceImpl implements MotanDemoService {
 
